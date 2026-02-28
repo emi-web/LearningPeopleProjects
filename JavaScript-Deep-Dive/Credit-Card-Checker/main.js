@@ -1,4 +1,4 @@
-// Arrays de ejemplo: algunos válidos, inválidos y misteriosos
+
 const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
 const invalid1 = [4, 5, 3, 2, 7, 7, 8, 7, 7, 1, 0, 9, 1, 7, 9, 5];
 const mystery1 = [3, 7, 1, 6, 0, 1, 5, 7, 2, 4, 6, 8, 0, 9, 2];
@@ -6,7 +6,7 @@ const mystery1 = [3, 7, 1, 6, 0, 1, 5, 7, 2, 4, 6, 8, 0, 9, 2];
 // Batch que contiene todos los arrays
 const batch = [valid1, invalid1, mystery1];
 
-// Función validateCred()
+// Function validateCred()
 function validateCred(arr) {
   let sum = 0;
   let doubleDigit = false;
@@ -26,7 +26,7 @@ function validateCred(arr) {
   return sum % 10 === 0;
 }
 
-// Función findInvalidCards()
+// Function findInvalidCards()
 function findInvalidCards(cards) {
   const invalidCards = [];
   for (let i = 0; i < cards.length; i++) {
@@ -37,7 +37,7 @@ function findInvalidCards(cards) {
   return invalidCards;
 }
 
-// Función idInvalidCardCompanies()
+// Function idInvalidCardCompanies()
 function idInvalidCardCompanies(invalidCards) {
   const companies = [];
   for (let i = 0; i < invalidCards.length; i++) {
